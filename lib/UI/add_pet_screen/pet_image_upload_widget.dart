@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class PetImageWidget extends StatelessWidget {
+class PetImageUploadWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(

@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:pet_owners/UI/pet_info/pet_info_screen.dart';
+
+import 'UI/add_pet_screen/add_pet_screen.dart';
 
 void main() {
   runApp(MyApp());

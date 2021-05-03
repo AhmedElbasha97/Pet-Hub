@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class TextFieldCompo extends StatelessWidget {
+class SimpleTextFieldComp extends StatelessWidget {
   final String label;
   final String hint;
   final bool arrow;
 
-  TextFieldCompo({this.label, this.hint, this.arrow = false});
+  SimpleTextFieldComp({this.label, this.hint, this.arrow = false});
 
   @override
   Widget build(BuildContext context) {

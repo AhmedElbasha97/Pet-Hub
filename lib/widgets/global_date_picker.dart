@@ -1,8 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:pet_owners/UI/pet_info/text_field_comp.dart';
+
 import 'dart:io' show Platform;
+
+import '../UI/add_pet_screen/simple_text_field_comp.dart';
 
 class GlobalDatePicker extends StatefulWidget {
   @override
@@ -91,7 +93,7 @@ class _GlobalDatePickerState extends State<GlobalDatePicker> {
       child: Stack(
         children: [
           Positioned(
-            child: TextFieldCompo(
+            child: SimpleTextFieldComp(
                 label: "Date of Birth",
                 hint:
                     DateFormat.yMMMMd('en_US').format(selectedDate).toString(),

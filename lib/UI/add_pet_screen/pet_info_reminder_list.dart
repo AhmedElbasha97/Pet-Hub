@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pet_owners/UI/pet_info/pet_info_reminder_item.dart';
+import 'package:pet_hub/UI/add_pet_screen/pet_info_reminder_item.dart';
 
 class PetAddReminderList extends StatelessWidget {
   @override

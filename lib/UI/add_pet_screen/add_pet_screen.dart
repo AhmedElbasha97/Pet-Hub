@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:pet_owners/UI/pet_info/gender_toggle.dart';
-import 'package:pet_owners/UI/pet_info/pet_image_upload_widget.dart';
-import 'package:pet_owners/UI/pet_info/pet_info_reminder_list.dart';
-import 'package:pet_owners/UI/pet_info/pet_info_switch.dart';
-import 'package:pet_owners/UI/pet_info/text_field_comp.dart';
-import 'package:pet_owners/widgets/global_appbar.dart';
-import 'package:pet_owners/widgets/global_date_picker.dart';
+import 'package:pet_hub/UI/add_pet_screen/gender_toggle.dart';
+import 'package:pet_hub/UI/add_pet_screen/pet_image_upload_widget.dart';
+import 'package:pet_hub/UI/add_pet_screen/pet_info_reminder_list.dart';
+import 'package:pet_hub/UI/add_pet_screen/pet_info_switch.dart';
+import 'package:pet_hub/UI/add_pet_screen/simple_text_field_comp.dart';
+import 'package:pet_hub/widgets/global_appbar.dart';
+import 'package:pet_hub/widgets/global_date_picker.dart';
 
 class PetInfoScreen extends StatefulWidget {
   @override
@@ -29,7 +29,7 @@ class _PetInfoScreenState extends State<PetInfoScreen> {
               Center(
                 child: Padding(
                   padding: const EdgeInsets.only(top: 40.0),
-                  child: PetImageWidget(),
+                  child: PetImageUploadWidget(),
                 ),
               ),
               SizedBox(
@@ -44,16 +44,16 @@ class _PetInfoScreenState extends State<PetInfoScreen> {
               ),
               Padding(
                 padding: const EdgeInsets.only(bottom: 8.0),
-                child: TextFieldCompo(label: "Pet's name", hint: "Bella"),
+                child: SimpleTextFieldComp(label: "Pet's name", hint: "Bella"),
               ),
               Padding(
                 padding: const EdgeInsets.only(bottom: 8.0),
-                child:
-                    TextFieldCompo(label: "Species", hint: "Dog", arrow: true),
+                child: SimpleTextFieldComp(
+                    label: "Species", hint: "Dog", arrow: true),
               ),
               Padding(
                 padding: const EdgeInsets.only(bottom: 8.0),
-                child: TextFieldCompo(
+                child: SimpleTextFieldComp(
                     label: "Breed", hint: "Border Collie", arrow: true),
               ),
               Padding(
