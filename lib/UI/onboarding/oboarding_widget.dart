@@ -14,6 +14,27 @@ class OnboeardWidget extends StatelessWidget {
   });
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return SingleChildScrollView(
+        child: Container(
+      child: Column(
+        children: [
+          Image.asset(assetlink),
+          Text('$title'),
+          Text('$subTitile'),
+          Row(
+            children: [
+              // ignore: deprecated_member_use
+              FlatButton(
+                  onPressed: () {},
+                  child: Row(
+                    children: [Text('Next'), Icon(Icons.arrow_forward)],
+                  )),
+              // ignore: deprecated_member_use
+              FlatButton(onPressed: () {}, child: Text('skip'))
+            ],
+          )
+        ],
+      ),
+    ));
   }
 }
