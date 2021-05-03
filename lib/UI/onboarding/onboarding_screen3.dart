@@ -6,9 +6,10 @@ class OnboeardScreen3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return OnboeardWidget(
       assetlink: '',
-      isactive: false,
-      title: 'Happier ,Healthier Pets',
-      subTitile: 'Make an appointment with your vets in just a few clicks',
+      islastscreen: true,
+      title: 'Take Care of Your Pet',
+      subTitile:
+          'This app will take care of your pet, so that you will have more time playing with it.',
     );
   }
 }

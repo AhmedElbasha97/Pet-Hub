@@ -6,9 +6,10 @@ class OnboeardScreen2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return OnboeardWidget(
       assetlink: '',
-      isactive: false,
-      title: 'Happier ,Healthier Pets',
-      subTitile: 'Make an appointment with your vets in just a few clicks',
+      islastscreen: false,
+      title: 'Enjoy Time with Your Pet',
+      subTitile:
+          'Our services enables you to get in touch with other pet lovers.',
     );
   }
 }
