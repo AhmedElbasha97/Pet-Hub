@@ -1,4 +1,4 @@
-# pethub
+# pet_owners
 
 A new Flutter application.
 
