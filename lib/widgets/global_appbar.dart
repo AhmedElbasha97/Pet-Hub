@@ -65,33 +65,3 @@ class GlobalAppbar extends StatelessWidget implements PreferredSizeWidget {
         preferredSize: preferredSize);
   }
 }
-
-// AppBar(
-// elevation: 5.0,
-// title: Padding(
-// padding: const EdgeInsets.only(left: 40.0),
-// child: Center(
-// child: Text(
-// 'Add Pet Details',
-// style: TextStyle(color: Colors.black),
-// ),
-// ),
-// ),
-// actions: [
-// Padding(
-// padding: const EdgeInsets.only(right: 20.0),
-// child: Center(
-// child: Text(
-// 'skip',
-// style: TextStyle(color: Colors.black),
-// ),
-// ),
-// )
-// ],
-// backgroundColor: Colors.white,
-// shape: RoundedRectangleBorder(
-// borderRadius: BorderRadius.vertical(
-// bottom: Radius.circular(30),
-// ),
-// ),
-// )

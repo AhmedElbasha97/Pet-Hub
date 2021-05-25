@@ -7,8 +7,8 @@ class PetImageUploadWidget extends StatelessWidget {
       children: [
         Positioned(
           child: Container(
-            width: MediaQuery.of(context).size.width * .3,
-            height: MediaQuery.of(context).size.width * .3,
+            width: 112,
+            height: 112,
             decoration: new BoxDecoration(
               shape: BoxShape.circle,
               image: new DecorationImage(

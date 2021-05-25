@@ -7,6 +7,7 @@ import 'package:pet_hub/UI/add_pet_screen/pet_info_switch.dart';
 import 'package:pet_hub/UI/add_pet_screen/simple_text_field_comp.dart';
 import 'package:pet_hub/widgets/global_appbar.dart';
 import 'package:pet_hub/widgets/global_date_picker.dart';
+import 'package:pet_hub/widgets/searchable_dropdown.dart';
 
 class PetInfoScreen extends StatefulWidget {
   @override
@@ -14,6 +15,14 @@ class PetInfoScreen extends StatefulWidget {
 }
 
 class _PetInfoScreenState extends State<PetInfoScreen> {
+  String species = '';
+
+  void setSpecies(val) {
+    setState(() {
+      species = val;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -39,7 +48,11 @@ class _PetInfoScreenState extends State<PetInfoScreen> {
                 padding: const EdgeInsets.only(bottom: 10.0),
                 child: Text(
                   'General Information',
-                  style: TextStyle(color: Colors.black, fontSize: 20.0),
+                  style: TextStyle(
+                      color: Color(0xff0d3f67),
+                      fontSize: 20.0,
+                      fontFamily: 'Avenir',
+                      fontWeight: FontWeight.w700),
                 ),
               ),
               Padding(
@@ -48,14 +61,24 @@ class _PetInfoScreenState extends State<PetInfoScreen> {
               ),
               Padding(
                 padding: const EdgeInsets.only(bottom: 8.0),
-                child: SimpleTextFieldComp(
-                    label: "Species", hint: "Dog", arrow: true),
+                child: SearchableDropDownComp(setSpecies),
               ),
+              if (species.isNotEmpty)
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 8.0),
+                  child: SimpleTextFieldComp(
+                      label: "Pet's Species", hint: 'Enter the Species'),
+                ),
               Padding(
                 padding: const EdgeInsets.only(bottom: 8.0),
-                child: SimpleTextFieldComp(
-                    label: "Breed", hint: "Border Collie", arrow: true),
+                child: SearchableDropDownComp(setSpecies),
               ),
+              if (species.isNotEmpty)
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 8.0),
+                  child: SimpleTextFieldComp(
+                      label: "Pet's Breed", hint: 'Enter the Species'),
+                ),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10.0),
                 child: Text(
