@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:pet_hub/UI/doctor_booking_screen/doctor_booking_profile.dart';
 
 import 'UI/add_pet_screen/add_pet_screen.dart';
 
@@ -21,8 +22,6 @@ class MyApp extends StatelessWidget {
         // // Define the default font family.
         // fontFamily: 'Georgia',
         //
-        // // Define the default TextTheme. Use this to specify the default
-        // // text styling for headlines, titles, bodies of text, and more.
         // textTheme: TextTheme(
         //   headline1: TextStyle(fontSize: 72.0, fontWeight: FontWeight.bold),
         //   headline6: TextStyle(fontSize: 36.0, fontStyle: FontStyle.italic),
@@ -47,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return CupertinoPageScaffold(
-      child: PetInfoScreen(),
+      child: DoctorBookingProfile(),
     );
   }
 }
