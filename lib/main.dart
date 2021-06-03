@@ -1,8 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:pet_hub/UI/doctor_booking_screen/doctor_booking_profile.dart';
-
-import 'UI/add_pet_screen/add_pet_screen.dart';
+import 'package:pet_hub/UI/doctor_booking_screen/doctor_booking_profile_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         // Define the default brightness and colors.
         // brightness: Brightness.dark,
-        primaryColor: Colors.lightBlue[800],
+        primaryColor: Color(0xFF0D3F67),
         accentColor: Colors.cyan[600],
 
         // // Define the default font family.

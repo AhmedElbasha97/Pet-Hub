@@ -33,6 +33,7 @@ dependencies:
   font_awesome_flutter: ^9.0.0
   intl: ^0.17.0
   searchable_dropdown: ^1.1.3
+  date_picker_timeline: ^1.2.3
 
 dev_dependencies:
   flutter_test:

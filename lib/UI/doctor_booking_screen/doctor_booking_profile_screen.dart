@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pet_hub/UI/doctor_booking_screen/bottom_booking_button_widget.dart';
+import 'package:pet_hub/UI/doctor_booking_screen/date_picker_booking_comp.dart';
 import 'package:pet_hub/UI/doctor_booking_screen/doctor_image_info_stack_widget.dart';
 
 class DoctorBookingProfile extends StatelessWidget {
@@ -32,24 +33,7 @@ class DoctorBookingProfile extends StatelessWidget {
                           color: Colors.green),
                     ),
                   ),
-                  Center(
-                    child: Container(
-                      height: mediaQuery.height * 0.30,
-                      width: mediaQuery.width * 0.9,
-                      decoration: BoxDecoration(
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.grey.withOpacity(0.1),
-                            spreadRadius: 10,
-                            blurRadius: 10,
-                            offset: Offset(0, 3), // changes position of shadow
-                          ),
-                        ],
-                        color: Colors.white,
-                        borderRadius: BorderRadius.all(Radius.circular(15.0)),
-                      ),
-                    ),
-                  )
+                  DatePickerComp(mediaQuery),
                 ],
               ),
             ),
