@@ -18,7 +18,7 @@ class DoctorReviewComp extends StatelessWidget {
                 color: Colors.grey.withOpacity(0.1),
                 spreadRadius: 10,
                 blurRadius: 10,
-                offset: Offset(0, 3), // changes position of shadow
+                offset: Offset(0, 0), // changes position of shadow
               ),
             ],
             color: Colors.white,

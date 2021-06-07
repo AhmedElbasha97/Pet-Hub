@@ -15,7 +15,10 @@ class DoctorBookingReviews extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text('Reviews'),
+              Text(
+                'Reviews',
+                style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+              ),
               Row(
                 children: [
                   Text('View all 125 reviews'),

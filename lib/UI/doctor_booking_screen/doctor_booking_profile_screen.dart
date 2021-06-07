@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pet_hub/UI/doctor_booking_screen/booking_doctor_location_preview.dart';
+import 'package:pet_hub/UI/doctor_booking_screen/booking_nearby_vets.dart';
 import 'package:pet_hub/UI/doctor_booking_screen/bottom_booking_button_widget.dart';
 import 'package:pet_hub/UI/doctor_booking_screen/date_picker_booking_comp.dart';
 import 'package:pet_hub/UI/doctor_booking_screen/doctor_booking_reviews.dart';
@@ -107,8 +108,9 @@ class DoctorBookingProfile extends StatelessWidget {
                     ),
                   ),
                   DoctorBookingReviews(mediaQuery),
+                  BookingNearbyVets(mediaQuery),
                   SizedBox(
-                    height: 150,
+                    height: 100,
                   ),
                 ],
               ),
