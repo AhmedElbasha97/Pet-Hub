@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:pet_hub/UI/doctor_booking_screen/booking_doctor_location_preview.dart';
 import 'package:pet_hub/UI/doctor_booking_screen/bottom_booking_button_widget.dart';
 import 'package:pet_hub/UI/doctor_booking_screen/date_picker_booking_comp.dart';
 import 'package:pet_hub/UI/doctor_booking_screen/doctor_image_info_stack_widget.dart';
@@ -34,6 +36,10 @@ class DoctorBookingProfile extends StatelessWidget {
                     ),
                   ),
                   DatePickerComp(mediaQuery),
+                  DoctorBookingLocationPreview(),
+                  SizedBox(
+                    height: 100,
+                  ),
                 ],
               ),
             ),
