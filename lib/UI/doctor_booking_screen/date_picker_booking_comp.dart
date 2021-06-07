@@ -50,7 +50,11 @@ class _DatePickerCompState extends State<DatePickerComp> {
                   ),
                   Text('September'),
                   IconButton(
-                      icon: Icon(Icons.arrow_forward_ios), onPressed: () {})
+                      icon: Icon(
+                        Icons.arrow_forward_ios,
+                        size: 20.0,
+                      ),
+                      onPressed: () {})
                 ],
               ),
               Container(
