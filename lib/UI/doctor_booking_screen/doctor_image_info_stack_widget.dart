@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class DoctorBookingImageInfoStack extends StatelessWidget {
   final mediaQuery;
@@ -18,6 +19,75 @@ class DoctorBookingImageInfoStack extends StatelessWidget {
             width: mediaQuery.width,
             height: mediaQuery.height * 0.5,
             alignment: Alignment.topCenter,
+          ),
+        ),
+        Positioned(
+          top: mediaQuery.height * 0.06,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 30.0),
+            child: Container(
+              width: mediaQuery.width * 0.85,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    height: 40,
+                    width: 40,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(15.0)),
+                        color: Colors.white),
+                    child: Center(
+                        child: IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.arrow_back_ios_outlined,
+                        size: 20.0,
+                      ),
+                    )),
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        height: 40,
+                        width: 40,
+                        decoration: BoxDecoration(
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(15.0)),
+                            color: Colors.white),
+                        child: Center(
+                            child: IconButton(
+                          onPressed: () {},
+                          icon: Icon(
+                            FontAwesomeIcons.heart,
+                            size: 20.0,
+                          ),
+                        )),
+                      ),
+                      SizedBox(
+                        width: 10.0,
+                      ),
+                      Container(
+                        height: 40,
+                        width: 40,
+                        decoration: BoxDecoration(
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(15.0)),
+                            color: Colors.white),
+                        child: Center(
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.share,
+                              size: 20.0,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              ),
+            ),
           ),
         ),
         Positioned(
