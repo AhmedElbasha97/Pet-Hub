@@ -9,6 +9,8 @@ class AppointmentDatePicker extends StatefulWidget {
 }
 
 class _AppointmentDatePickerState extends State<AppointmentDatePicker> {
+  String _selectedHour;
+  DateTime _selectedDay = DateTime.now();
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -24,9 +26,9 @@ class _AppointmentDatePickerState extends State<AppointmentDatePicker> {
             DateTime.now().add(Duration(days: 7))
           ],
           onDateChange: (date) {
-            // setState(() {
-            //   _selectedDay = date;
-            // });
+            setState(() {
+              _selectedDay = date;
+            });
           },
         ),
         SizedBox(
@@ -39,9 +41,9 @@ class _AppointmentDatePickerState extends State<AppointmentDatePicker> {
             height: 60.0,
             width: 90.0,
             callback: (val) {
-              // setState(() {
-              //   _selectedHour = val;
-              // });
+              setState(() {
+                _selectedHour = val;
+              });
             },
             availableHours: ["10:00 AM", "11:00 AM", "12:00 PM", "5:00 PM"],
           ),
