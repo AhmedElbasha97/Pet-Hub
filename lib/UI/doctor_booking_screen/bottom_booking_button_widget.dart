@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pet_hub/UI/booking_appointment/booking_appointment_screen.dart';
 
 class BottomBookingWidget extends StatelessWidget {
   final mediaQuery;
@@ -44,7 +45,12 @@ class BottomBookingWidget extends StatelessWidget {
               ],
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => BookingAppointment()));
+              },
               child: Text('Book'),
               style: ElevatedButton.styleFrom(
                   primary: Theme.of(context).accentColor,

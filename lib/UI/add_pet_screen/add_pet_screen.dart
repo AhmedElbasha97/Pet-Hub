@@ -27,7 +27,10 @@ class _PetInfoScreenState extends State<PetInfoScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xFFF8F7FB),
-      appBar: GlobalAppbar(),
+      appBar: GlobalAppbar(
+        isBack: false,
+        isSkip: true,
+      ),
       resizeToAvoidBottomInset: false,
       body: SingleChildScrollView(
         child: Padding(

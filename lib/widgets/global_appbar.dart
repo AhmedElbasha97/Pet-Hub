@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 
 class GlobalAppbar extends StatelessWidget implements PreferredSizeWidget {
+  final title;
+  final isSkip;
+  final isBack;
+
+  GlobalAppbar({this.title, this.isSkip = false, this.isBack = true});
   @override
   Size get preferredSize => Size.fromHeight(60);
 
@@ -34,26 +39,40 @@ class GlobalAppbar extends StatelessWidget implements PreferredSizeWidget {
                     ),
                     child: Stack(
                       children: [
+                        if (isBack)
+                          Align(
+                            alignment: Alignment(-0.9, 0.5),
+                            child: InkWell(
+                              onTap: () {
+                                Navigator.pop(context);
+                              },
+                              child: Icon(
+                                Icons.arrow_back_ios_outlined,
+                                size: 20.0,
+                              ),
+                            ),
+                          ),
                         Align(
                           alignment: Alignment(0, 0.5),
                           child: Text(
-                            'Add Pet Details',
+                            title,
                             style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 20.0,
                                 color: Colors.black),
                           ),
                         ),
-                        Align(
-                          alignment: Alignment(0.9, 0.5),
-                          child: InkWell(
-                            onTap: () {},
-                            child: Text(
-                              'skip',
-                              style: TextStyle(color: Colors.black),
+                        if (isSkip)
+                          Align(
+                            alignment: Alignment(0.9, 0.5),
+                            child: InkWell(
+                              onTap: () {},
+                              child: Text(
+                                'skip',
+                                style: TextStyle(color: Colors.black),
+                              ),
                             ),
-                          ),
-                        )
+                          )
                       ],
                     ),
                   ),
