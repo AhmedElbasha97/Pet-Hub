@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:pethub/authentication/signIn.dart';
-
+import 'package:pethub/sortBy.dart';
 import 'authentication/signUp.dart';
 
 void main() => runApp(
-  MaterialApp(home: SignIn()),
+  MaterialApp(home: sortBy()),
 );
 
 class MyHomePage extends StatelessWidget {
